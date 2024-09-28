@@ -72,7 +72,7 @@ async function handleSubmit(e) {
   const messageDiv = document.getElementById(uniqueId);
   loader(messageDiv);
 
-  const response = await fetch("http://localhost:3000", {
+  const response = await fetch("API", {
     method: 'POST',
     headers: {
       'Content-type': "application/json"
