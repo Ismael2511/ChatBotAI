@@ -5,12 +5,10 @@ import OpenAI from "openai"
 
 dotenv.config({path: '../config.env'})
 
-const openai = new OpenAI({
-    //key
-})
+const openai = new OpenAI()
 
 const app = express()
-app.use(cors({origin:"*"}))
+app.use(cors())
 app.use(express.json());
 
 app.get("/", async (req,res) =>{
